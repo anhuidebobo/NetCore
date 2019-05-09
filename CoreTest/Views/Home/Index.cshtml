@@ -1,0 +1,22 @@
+﻿@using CoreTest.Models;
+@model UserName
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@*@Html.PartialAsync("abc", new Person { ID = 2, Name = "cc" }).Result
+    <br />
+    @{
+        await Html.RenderPartialAsync("abc",new Person { ID=1,Name="bb"});
+        List<int> t = new List<int>();
+    }*@
+
+@await Component.InvokeAsync("Abc")
+<script src="~/js/site.js"></script>
+
+<link href="~/css/site.css" rel="stylesheet" />
+
+<img src="~/timg.jpg" />
+<img src="~/Images/timg.jpg" />
